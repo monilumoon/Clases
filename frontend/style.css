@@ -1,0 +1,66 @@
+/* Seteamos margenes y padding en 0 para todo desde el inicio*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    background-color: rgb(255, 111, 0);
+}
+a {
+    background-color: violet;
+}
+table {
+    border-radius: 10px;
+    border-style: solid;
+    border: 1px solid;
+    width: 100%;
+}
+
+
+div.grid-item.item-1 {
+    grid-area: playlist;
+}
+
+div.grid-item.item-2 {
+    grid-area: footer;
+    display: none;
+}
+
+div.grid-item.item-3 {
+    grid-area: search;
+}
+
+div.grid-item.item-4 {
+    grid-area: library;
+}
+
+div.grid-item.item-5 {
+    grid-area: player;
+}
+
+.navbar-area {
+    grid-area:  navbar-area;
+    
+}
+
+.footer-area {
+   grid-area: footer-area;
+   position: fixed;
+   bottom: 0;
+}
+
+.content-area{
+    grid-area: content-area;
+    height: 100vh;
+}
+.grid-container {
+    background-color: aquamarine;
+    width: 100%;
+        display: grid;
+    grid-template-areas: 
+    'navbar-area'
+    'content-area'
+    'footer-area';
+}
+
+

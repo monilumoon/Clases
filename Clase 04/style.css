@@ -1,0 +1,41 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    text-align: center;
+    font: 85% helvetica;
+    line-height: 2em;
+    color: rgb(0, 0, 0);
+    background: #888;
+}
+/*
+h1,h1,h3{
+    padding: 10px;
+}*/
+
+/*estoy definiendo una clase*/
+table {
+    border-radius: 10px;
+    border-style: solid;
+    border: 1px solid;
+    width: 100%;
+
+}
+.pAmarillo {
+    background-color: rgb(253, 200, 200);
+}
+#pMyID {
+    background-color: deeppink;
+}
+body > p:nth-child(2) {
+    background-color: red;}
+p {
+    background-color: rgb(255, 222, 249);
+
+}
+body { 
+    background-color: aquamarine;
+}
+a {
+    background-color: rgb(216, 216, 236);
+}

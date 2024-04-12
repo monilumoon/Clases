@@ -1,0 +1,107 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    text-align: center;
+    font: 85% helvetica;
+    line-height: 2em;
+    color: rgb(0, 0, 0);
+    background: #888;
+}
+/*
+h1,h1,h3{
+    padding: 10px;
+}*/
+
+/*estoy definiendo una clase*/
+table {
+    border-radius: 10px;
+    border-style: solid;
+    border: 1px solid;
+    width: 100%;
+
+}
+body > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(3) > td {
+    display: none;
+}
+
+.container {
+    background: rgb(153, 111, 192);
+    display: flex;
+    width: 150px;
+    flex-direction: row-reverse;
+}
+
+.item {
+    margin: 5px;
+    background: gray;
+}
+.pAmarillo {
+    background-color: rgb(253, 200, 200);
+}
+#pMyID {
+    background-color: deeppink;
+}
+body > p:nth-child(2) {
+    background-color: red;}
+p {
+    background-color: rgb(255, 222, 249);
+
+}
+body { 
+    background-color: rgb(233, 235, 234);
+}
+
+.grid-container div{
+    background-color: rgb(83, 85, 233);
+    width: 50%;
+    display: grid;
+    grid-template-areas:  
+    'header playlist playlist playlist playlist playlist'
+    'library playlist playlist playlist playlist playlist'
+    'player player player player player player';
+    gap: 10px;
+    padding: 10px;
+}
+div.grid-item.item-1{
+    grid-area: playlist;
+}
+
+div.grid-item.item-2{
+    grid-area: footer;
+}
+div.grid-item.item-3{
+    grid-area: search;
+}
+div.grid-item.item-4{
+    grid-area: library;
+}
+div.grid-item.item-5{
+    grid-area: player;
+}
+
+
+
+
+
+a {
+    background-color: rgb(216, 216, 236);}
+    @media only screen and (max-width: 300px) {
+        .modalEmergency {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            opacity: 80%;
+            display: block;
+        }
+    }
+        
+    @media only screen and (min-width: 400px) {
+        .modalEmergency {
+            background-color: blue;
+        }
+    }
